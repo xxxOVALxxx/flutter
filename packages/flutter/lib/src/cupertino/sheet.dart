@@ -1148,7 +1148,7 @@ class _CupertinoDragGestureController<T> {
         // might catch the sheet mid-flight. Animate back to 0.0 first, and only
         // pop the route if the animation completes successfully.
         _animateSheetBack().then<void>((void value) {
-          if (getIsCurrent() && popDragController.value == 0.0) {
+          if (getIsCurrent() && popDragController.isDismissed) {
             navigator.pop();
           }
         });

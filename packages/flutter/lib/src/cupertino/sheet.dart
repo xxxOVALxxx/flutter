@@ -1078,8 +1078,8 @@ class _CupertinoDragGestureController<T> {
     return popDragController.value != 1.0;
   }
 
-  /// Determines whether the sheet should animate forward stay open or
-  /// backward close based on velocity and current state.
+  /// Determines whether the sheet should animate forward (stay open) or
+  /// backward (close) based on velocity and current state.
   bool _shouldAnimateForward(double velocity) {
     final bool isCurrent = getIsCurrent();
 
